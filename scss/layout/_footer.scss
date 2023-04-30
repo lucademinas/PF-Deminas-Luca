@@ -1,0 +1,19 @@
+.footer {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        filter: invert(1);
+    }
+}
+
+.footer-m {
+    margin-top: 50px;
+}
+
+.texto {
+    color: #ddd;
+}

@@ -1,9 +1,7 @@
+@import "../base/mixins";
+
 .footer {
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include center-vertical;
 
     img {
         filter: invert(1);

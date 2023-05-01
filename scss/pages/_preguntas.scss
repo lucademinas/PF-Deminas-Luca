@@ -1,4 +1,41 @@
-.preguntas {
-    margin-top: 50px;
-    font-size: 20px;
+@import "../base/variables";
+
+
+.accordion{
+    margin-bottom: 30px;
+    padding: 50px;
+
+
+    .card{
+        margin: 20px;
+
+
+        .card-header{
+          
+
+            button{
+                 font-family: $font2;
+                font-size: 25px;
+                
+            }
+        }
+        
+        .card-body{
+            font-family: $font2;
+            font-size: 25px;
+        }
+      
+    }
+
+    
+
+
+
+
+}
+
+
+.container-preguntas h1{
+    font-family: 'Vina Sans', cursive;
+    font-size: 100px;
 }

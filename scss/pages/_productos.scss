@@ -4,7 +4,7 @@
     grid-gap: 30px;
 
     .producto {
-        background-color: #fff;
+        background-color: $color3;
         border: 1px solid #ddd;
         padding: 20px;
         text-align: center;
@@ -23,7 +23,7 @@
 }
 
 .productos {
-    background-color: #343a40;
+    background-color: $color1;
 }
 
 @media (max-width: 767px) {

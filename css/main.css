@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -260,7 +271,7 @@ h1 h2 {
 
 .boton {
   background-color: #523a34;
-  color: #ffffff;
+  color: #fff;
   padding: 1rem 3rem;
   margin-top: 1rem;
   font-size: 0.8rem;

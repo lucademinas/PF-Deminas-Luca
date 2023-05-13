@@ -1,77 +1,85 @@
 .contenedor-productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 
-    .producto {
-        background-color: $color3;
-        border: 1px solid #ddd;
-        padding: 20px;
-        text-align: center;
+  .producto {
+    background-color: $color3;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
 
-        img {
-            max-width: 100%;
-            height: auto;
-            max-height: 250px;
-        }
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 0.4s ease;
+      background-color: #eee;
+      box-shadow: 5px 5px 10px 10px #000000;
 
-        h3 {
-            margin-top: 5px;
-            font-size: 25px;
-        }
     }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      max-height: 250px;
+    }
+
+    h3 {
+      margin-top: 5px;
+      font-size: 25px;
+    }
+  }
 }
 
 .productos {
-    background-color: $color1;
+  background-color: $color1;
 }
 
 @media (max-width: 767px) {
-    
 
-    .contenedor-productos {
-        grid-template-columns: 1fr;
-        grid-gap: 15px;
-    }
 
-}    
+  .contenedor-productos {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+}
 
 @media (min-width: 768px) and (max-width: 992px) {
 
-    .contenedor-productos {
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
+  .contenedor-productos {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
 
-    }
-}    
+  }
+}
 
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
-    .contenedor {
-      flex-direction: column;
-      align-items: stretch;
-      margin-top: 25px;
-      padding: 0;
-    }
-    
-    .empresa-img {
-      margin-right: 0;
-    }
-    
-    .empresa-img img {
-      height: auto;
-      max-width: 100%;
-    }
-    
-    .empresa-content {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  
-    .nosotros{
-      font-size: 22px;
-    }
-  
+  .contenedor {
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 25px;
+    padding: 0;
   }
-  
+
+  .empresa-img {
+    margin-right: 0;
+  }
+
+  .empresa-img img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  .empresa-content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .nosotros {
+    font-size: 22px;
+  }
+
+}

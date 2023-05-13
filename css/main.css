@@ -69,20 +69,21 @@ h1 h2 {
     transform: translateX(0);
   }
 }
-/* OTRA RESOLUCION */
 @media (min-width: 768px) and (max-width: 992px) {
-  /* Estilos para vista entre 768px y 992px */
   .navbar-brand {
     font-size: 1.5rem;
     transform: translateY(-40px);
+    margin-bottom: 15px;
   }
   .navbar-toggler {
     font-size: 1.5rem;
     transform: translateY(-30px);
+    margin-bottom: 15px;
   }
   .navbar-brand img {
-    max-height: 150px;
+    max-height: 130px;
     max-width: 100%;
+    height: 150px;
   }
   .navbar-collapse {
     position: absolute;
@@ -116,6 +117,13 @@ h1 h2 {
   color: #ddd;
 }
 
+@media screen and (min-width: 768px) {
+  .icon-container {
+    justify-content: center;
+    margin-left: 135px;
+    margin-bottom: 10px;
+  }
+}
 .text-size {
   font-size: 3.5em;
 }
@@ -131,6 +139,20 @@ h1 h2 {
   border: 1px solid black;
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .img-fluid {
+    width: 550px;
+    height: 550px;
+    margin-left: 30px;
+  }
+  .feature-box {
+    max-width: 300px;
+    height: 300px;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+  }
+}
 .contenedor-productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -141,6 +163,13 @@ h1 h2 {
   border: 1px solid #ddd;
   padding: 20px;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.contenedor-productos .producto:hover {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+  background-color: #eee;
+  box-shadow: 5px 5px 10px 10px #000000;
 }
 .contenedor-productos .producto img {
   max-width: 100%;

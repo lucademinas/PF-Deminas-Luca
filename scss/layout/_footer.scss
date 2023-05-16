@@ -16,6 +16,18 @@
     color: #ddd;
 }
 
+.icon-container a:hover .facebook {
+    filter: invert(57%) sepia(90%) saturate(4104%) hue-rotate(208deg) brightness(93%) contrast(89%);
+
+}
+
+.icon-container a:hover .insta {
+    filter: invert(24%) sepia(94%) saturate(3800%) hue-rotate(325deg) brightness(90%) contrast(107%);
+
+}
+
+  
+
 @media screen and (min-width: 768px) {
 
     .icon-container {

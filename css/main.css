@@ -1,18 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&family=Vina+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@200&family=Vina+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -117,6 +127,14 @@ h1 h2 {
   color: #ddd;
 }
 
+.icon-container a:hover .facebook {
+  filter: invert(57%) sepia(90%) saturate(4104%) hue-rotate(208deg) brightness(93%) contrast(89%);
+}
+
+.icon-container a:hover .insta {
+  filter: invert(24%) sepia(94%) saturate(3800%) hue-rotate(325deg) brightness(90%) contrast(107%);
+}
+
 @media screen and (min-width: 768px) {
   .icon-container {
     justify-content: center;
@@ -125,11 +143,13 @@ h1 h2 {
   }
 }
 .text-size {
-  font-size: 3.5em;
+  font-size: 3.1em;
+  font-family: "Poppins", sans-serif;
 }
 
 .text-sizep {
-  font-size: 1.5em;
+  font-size: 1.7em;
+  font-family: "Roboto", sans-serif;
 }
 
 .feature-box {
@@ -139,6 +159,30 @@ h1 h2 {
   border: 1px solid black;
 }
 
+.my-auto {
+  font-family: "Roboto", sans-serif;
+}
+
+.btn:hover {
+  color: #ffffff;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.2);
+}
+
+.btn {
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .text-size {
+    font-size: 2.7em;
+    margin-top: 40px;
+  }
+  .text-sizep {
+    font-size: 1.4em;
+    margin-bottom: 25px;
+  }
+}
 @media (min-width: 768px) and (max-width: 992px) {
   .img-fluid {
     width: 550px;
@@ -151,6 +195,14 @@ h1 h2 {
     padding: 20px;
     margin: 0 10px;
     text-align: center;
+  }
+  .text-size {
+    font-size: 2.9em;
+    margin-top: 40px;
+  }
+  .text-sizep {
+    font-size: 1.6em;
+    margin-bottom: 25px;
   }
 }
 .contenedor-productos {
@@ -224,23 +276,33 @@ h1 h2 {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-top: 35px;
   padding: 10px;
   padding-bottom: 15px;
+  background-color: #4B4F53;
 }
 
 .empresa-img {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  background-color: #4B4F53;
+  width: 100%;
+  height: auto;
 }
 
 .empresa-img img {
   max-width: 100%;
-  height: 65vh;
+  height: 70vh;
 }
 
 .empresa-content {
   flex: 1;
+  background-color: #787F85;
+  margin-bottom: -30px;
+  margin-top: 10px;
+  padding: 25px;
+  margin-bottom: 10px;
+  margin-right: 15px;
 }
 .empresa-content h2 {
   position: relative;
@@ -248,6 +310,8 @@ h1 h2 {
   font-family: "Vina Sans", cursive;
   font-size: 80px;
   box-shadow: 0 0 5px;
+  background-color: #787F85;
+  color: #f2f2f2;
 }
 .empresa-content .nosotros {
   font-size: 30px;
@@ -255,26 +319,48 @@ h1 h2 {
   padding: 15px;
   margin-top: -30px;
   line-height: 1.5;
+  color: #f2f2f2;
 }
 
 @media screen and (max-width: 768px) {
   .contenedor {
     flex-direction: column;
-    margin-top: 20px;
-    padding: 5px;
-  }
-  .empresa-img {
-    margin-right: 0;
-    margin-bottom: 20px;
-    padding: 0px;
+    align-items: center;
   }
   .empresa-img img {
-    height: auto;
+    height: 40vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .empresa-content {
-    margin-bottom: 20px;
-    position: relative;
-    top: 50px;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .empresa-content .nosotros {
+    font-size: 25px;
+    padding: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .contenedor {
+    flex-direction: column;
+    margin-top: -1px;
+    align-items: center;
+  }
+  .empresa-img img {
+    height: 65vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .empresa-content {
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .empresa-content .nosotros {
+    font-size: 25px;
+    padding: 10px;
   }
 }
 .accordion {
@@ -340,17 +426,18 @@ h1 h2 {
   justify-content: center;
 }
 .contacto .grid .textosContacto h2 {
-  font-size: 24px;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 .contacto .grid .correoContacto {
   display: flex;
   align-items: center;
   margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contacto .grid .correoContacto img {
-  width: 30px;
-  margin-left: 150px;
+  width: 25px;
   margin-bottom: 10px;
 }
 .contacto .grid .correoContacto p {
@@ -421,6 +508,27 @@ h1 h2 {
   }
   .contacto label {
     font-size: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 482px) {
+  .textosContacto {
+    overflow: hidden;
+    padding: 10px;
+  }
+  .textosContacto h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .correoContacto {
+    display: flex;
+    align-items: center;
+  }
+  .correoContacto img {
+    width: 20px;
+    margin-right: 10px;
+  }
+  .formulario {
+    margin-top: 20px;
   }
 }
 

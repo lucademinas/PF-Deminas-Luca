@@ -322,7 +322,7 @@ h1 h2 {
   color: #f2f2f2;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .contenedor {
     flex-direction: column;
     align-items: center;
@@ -367,7 +367,8 @@ h1 h2 {
 }
 .accordion {
   margin-bottom: 30px;
-  padding: 50px;
+  padding: 40px;
+  margin-top: -100px;
 }
 .accordion .card {
   margin: 20px;
@@ -375,17 +376,87 @@ h1 h2 {
 .accordion .card .card-header button {
   font-family: "Oswald", sans-serif;
   font-size: 25px;
+  color: rgb(53, 51, 51);
 }
 .accordion .card .card-body {
   font-family: "Oswald", sans-serif;
   font-size: 25px;
+  background-color: #DDDADA;
+  border: 5px solid #f2f2f2;
+}
+
+.preguntas-fondo {
+  background-color: #DDDADA;
+}
+
+.container-preguntas {
+  margin: -50px;
+  position: relative;
 }
 
 .container-preguntas h1 {
   font-family: "Vina Sans", cursive;
-  font-size: 100px;
+  font-size: 70px;
+  padding: 50px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
+  color: rgb(73, 63, 63);
 }
 
+.faq-image {
+  width: 370px;
+  height: 370px;
+  position: absolute;
+  left: 570px;
+}
+
+@media only screen and (max-width: 768px) {
+  .accordion {
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  .accordion .card {
+    margin: 10px;
+  }
+  .accordion .card .card-header button {
+    font-size: 25px;
+    width: 100%;
+  }
+  .accordion .card .card-header {
+    padding: 0;
+  }
+  .accordion .card .card-body {
+    font-size: 18px;
+  }
+  .faq-image {
+    display: none;
+  }
+  .container-preguntas h1 {
+    font-size: 45px;
+    padding-top: 50px;
+  }
+  .faq-image {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: 80%;
+    transform: translateX(-45%);
+  }
+  .accordion {
+    margin-bottom: -10px;
+  }
+  .footer {
+    margin-top: 0px;
+  }
+  .container-preguntas {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .faq-image {
+    display: none;
+  }
+}
 .boton {
   background-color: #523a34;
   color: #fff;
